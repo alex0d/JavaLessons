@@ -1,4 +1,4 @@
-package ru.alex0d.java.l220915.task7;
+package ru.alex0d.java.practice2.task7;
 
 public class Book {
     private String author;

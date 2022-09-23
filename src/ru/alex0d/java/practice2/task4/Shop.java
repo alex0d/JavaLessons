@@ -1,4 +1,4 @@
-package ru.alex0d.java.l220915.task4;
+package ru.alex0d.java.practice2.task4;
 
 import java.util.ArrayList;
 import java.util.function.Predicate;

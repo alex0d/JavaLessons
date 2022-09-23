@@ -1,7 +1,7 @@
-package ru.alex0d.java.l220915.task6;
+package ru.alex0d.java.practice2.task6;
 
-import ru.alex0d.java.l220915.task3.Circle;
-import ru.alex0d.java.l220915.task3.Point;
+import ru.alex0d.java.practice2.task3.Circle;
+import ru.alex0d.java.practice2.task3.Point;
 
 public class CircleModel extends Circle {
     public CircleModel(Point center, double r) {

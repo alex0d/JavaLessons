@@ -1,4 +1,4 @@
-package ru.alex0d.java.l220915.task9;
+package ru.alex0d.java.practice2.task9;
 
 import java.util.ArrayList;
 import java.util.Arrays;

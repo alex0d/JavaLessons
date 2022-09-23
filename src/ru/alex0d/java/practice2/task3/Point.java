@@ -1,4 +1,4 @@
-package ru.alex0d.java.l220915.task3;
+package ru.alex0d.java.practice2.task3;
 
 public class Point {
     private double x;

@@ -1,4 +1,4 @@
-package ru.alex0d.java.l220915.task2;
+package ru.alex0d.java.practice2.task2;
 
 public class Ball {
     private double x;

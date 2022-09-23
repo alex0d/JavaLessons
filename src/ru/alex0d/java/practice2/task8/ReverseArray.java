@@ -1,4 +1,4 @@
-package ru.alex0d.java.l220915.task8;
+package ru.alex0d.java.practice2.task8;
 
 public class ReverseArray {
     public static void main(String[] args) {

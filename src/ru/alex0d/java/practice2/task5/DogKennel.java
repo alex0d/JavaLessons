@@ -1,4 +1,4 @@
-package ru.alex0d.java.l220915.task5;
+package ru.alex0d.java.practice2.task5;
 
 import java.util.ArrayList;
 import java.util.Scanner;

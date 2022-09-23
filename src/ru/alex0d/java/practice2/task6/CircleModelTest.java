@@ -1,4 +1,4 @@
-package ru.alex0d.java.l220915.task6;
+package ru.alex0d.java.practice2.task6;
 
 public class CircleModelTest {
     public static void main(String[] args) {

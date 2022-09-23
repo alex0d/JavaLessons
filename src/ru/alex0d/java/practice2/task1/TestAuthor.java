@@ -1,4 +1,4 @@
-package ru.alex0d.java.l220915.task1;
+package ru.alex0d.java.practice2.task1;
 
 import java.util.Scanner;
 
