@@ -16,9 +16,9 @@ public class Poker {
         assert n * cardsPerPlayer <= 52;
 
         ArrayList<String> deck = new ArrayList<>(4 * cardRanks.length);  // 52-карточная колода
-        for (int i = 0; i < 4; i++) {
-            for (int j = 0; j < cardRanks.length; j++) {
-                deck.add(cardRanks[j] + (i == 0 ? "♠" : i == 1 ? "♥" : i == 2 ? "♣" : "♦"));
+        for (String cardSuit : "♠♥♦♣".split("")) {
+            for (String cardRank : cardRanks) {
+                deck.add(cardRank + cardSuit);
             }
         }
         Collections.shuffle(deck);
