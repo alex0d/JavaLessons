@@ -8,6 +8,7 @@ public class CountriesMenu extends JFrame {
         super("Countries");
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setSize(350, 200);
+        setLocationRelativeTo(null);
         setLayout(new GridLayout(3,1));
 
         Font smallFont = new Font("Verdana", Font.PLAIN, 20);
@@ -62,5 +63,9 @@ public class CountriesMenu extends JFrame {
             }
         });
         comboBox.setSelectedItem("Russia");
+    }
+
+    public static void main(String[] args) {
+        EventQueue.invokeLater(() -> new CountriesMenu().setVisible(true));
     }
 }

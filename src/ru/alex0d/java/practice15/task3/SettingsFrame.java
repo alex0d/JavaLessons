@@ -9,6 +9,7 @@ public class SettingsFrame extends JFrame {
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setSize(350,200);
         setResizable(false);
+        setLocationRelativeTo(null);
         setLayout(new GridBagLayout());
         getContentPane().setBackground(Color.WHITE);
 
@@ -102,5 +103,9 @@ public class SettingsFrame extends JFrame {
         menuBar.add(menuHelp);
 
         setJMenuBar(menuBar);
+    }
+
+    public static void main(String[] args) {
+        EventQueue.invokeLater(() -> new SettingsFrame().setVisible(true));
     }
 }

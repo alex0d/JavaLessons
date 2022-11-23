@@ -8,6 +8,7 @@ public class SimpleCalculator extends JFrame{
         super("Simple Calculator");
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setSize(600,400);
+        setLocationRelativeTo(null);
         setLayout(new GridLayout(4,2));
 
         JPanel[] panel = new JPanel[8];
@@ -116,5 +117,9 @@ public class SimpleCalculator extends JFrame{
                 JOptionPane.showMessageDialog(this, "Ошибка ввода", "Ошибка!", JOptionPane.ERROR_MESSAGE);
             }
         });
+    }
+
+    public static void main(String[] args) {
+        EventQueue.invokeLater(() -> new SimpleCalculator().setVisible(true));
     }
 }

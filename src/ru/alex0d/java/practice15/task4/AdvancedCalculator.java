@@ -1,5 +1,7 @@
 package ru.alex0d.java.practice15.task4;
 
+import ru.alex0d.java.practice15.task2.CountriesMenu;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -14,6 +16,7 @@ public class AdvancedCalculator extends JFrame {
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setSize(250, 350);
         setResizable(false);
+        setLocationRelativeTo(null);
         setLayout(new GridBagLayout());
         getContentPane().setBackground(Color.WHITE);
         getRootPane().setBorder(BorderFactory.createMatteBorder(5, 5, 5, 5, Color.WHITE));
@@ -204,6 +207,10 @@ public class AdvancedCalculator extends JFrame {
             System.err.println(e.getMessage());
             return null;
         }
+    }
+
+    public static void main(String[] args) {
+        EventQueue.invokeLater(() -> new AdvancedCalculator().setVisible(true));
     }
 
 }
