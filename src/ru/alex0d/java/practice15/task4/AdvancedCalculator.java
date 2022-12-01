@@ -14,7 +14,7 @@ public class AdvancedCalculator extends JFrame {
     AdvancedCalculator() {
         super("Calculator");
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        setSize(250, 350);
+        setSize(270, 350);
         setResizable(false);
         setLocationRelativeTo(null);
         setLayout(new GridBagLayout());
