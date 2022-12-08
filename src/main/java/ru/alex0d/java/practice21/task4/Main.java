@@ -11,7 +11,7 @@ import static java.lang.Math.min;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        String PATH = "src\\ru\\alex0d\\java\\practice21\\";
+        String PATH = "src\\main\\java\\ru\\alex0d\\java\\practice21\\task4\\";
 
         ArrayList<File> files = getFiles(PATH);
         files = new ArrayList<>(files.subList(0, min(files.size(), 5)));

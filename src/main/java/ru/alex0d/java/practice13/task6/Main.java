@@ -10,7 +10,7 @@ public class Main {
     public static void main(String[] args) throws IOException {
 //        Scanner scanner = new Scanner(System.in);
 //        String fileName = scanner.nextLine();
-        String fileName = "src\\ru\\alex0d\\java\\practice13\\task6\\file.txt";
+        String fileName = "src\\main\\java\\ru\\alex0d\\java\\practice13\\task6\\file.txt";
 
         ArrayList<String> words = new ArrayList<>();
 
