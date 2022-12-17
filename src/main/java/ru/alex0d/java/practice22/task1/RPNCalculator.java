@@ -18,16 +18,18 @@ public abstract class RPNCalculator {
                         operators.push(token);
                     } else {
                         String operator = operators.peek();
-                        if (getPriority(operator) >= getPriority(token)) {
+                        while (getPriority(operator) >= getPriority(token)) {
                             Double rightOperand = operands.pop();
                             Double leftOperand = operands.pop();
                             Double result = calculate(leftOperand, rightOperand, operator);
                             operands.push(result);
                             operators.pop();
-                            operators.push(token);
-                        } else {
-                            operators.push(token);
+                            if (operators.isEmpty()) {
+                                break;
+                            }
+                            operator = operators.peek();
                         }
+                        operators.push(token);
                     }
                 }
             }
