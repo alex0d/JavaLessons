@@ -1,4 +1,4 @@
-package ru.alex0d.java.l220901;
+package ru.alex0d.java.practice1;
 
 import java.util.ArrayList;
 import java.util.Collections;

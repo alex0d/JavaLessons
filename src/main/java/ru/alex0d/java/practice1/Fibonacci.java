@@ -1,4 +1,4 @@
-package ru.alex0d.java.l220908;
+package ru.alex0d.java.practice1;
 
 import java.util.Scanner;
 
