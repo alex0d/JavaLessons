@@ -1,5 +1,7 @@
 package ru.alex0d.java.practice3.task2;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.Scanner;
 
 public class Converter {
@@ -12,10 +14,10 @@ public class Converter {
         System.out.print("Введите сумму в выбранной валюте: ");
         double amount = scanner.nextDouble();
 
-        System.out.println("Доллар: " + convert(amount, currency, "USD"));
-        System.out.println("Евро: " + convert(amount, currency, "EUR"));
-        System.out.println("Рубль: " + convert(amount, currency, "RUB"));
-        System.out.println("Фунт стерлингов: " + convert(amount, currency, "GBP"));
+        System.out.println("Доллар: " + convert(amount, currency, "USD") + " USD");
+        System.out.println("Евро: " + convert(amount, currency, "EUR") + " EUR");
+        System.out.println("Рубль: " + convert(amount, currency, "RUB") + " RUB");
+        System.out.println("Фунт стерлингов: " + convert(amount, currency, "GBP") + " GBP");
     }
 
     public static double convert(double amount, String from, String to) {
@@ -58,6 +60,6 @@ public class Converter {
                 };
                 break;
         }
-        return result;
+        return BigDecimal.valueOf(result).setScale(2, RoundingMode.HALF_UP).doubleValue();
     }
 }
